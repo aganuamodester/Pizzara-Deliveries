@@ -1,8 +1,9 @@
 @mixin flex($justify,$align,$direction:row){
     display:flex;
     justify-content: $justify;
-    alighn-items: $align;
+    align-items: $align;
     flex-direction: $direction;
 
 }
 
+ 
