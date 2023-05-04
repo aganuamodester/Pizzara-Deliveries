@@ -1,0 +1,58 @@
+@use "../utilities/mixins" as *;
+@use "../utilities/variables" as*;
+.hero {
+  &__container {
+    gap: 5em;
+    @include flex(space-between, flex-start);
+    h1 {
+      font-size: 5rem;
+    }
+    
+  
+    
+     }
+
+     &__left{
+      &--orange{
+        color: $orange;
+      }
+      &__search{
+        @include flex(flex-start,center );
+        padding-left: 2em;
+        border-radius: 6px;
+        border: 2px solid $light-grey; 
+         
+      i{
+        width: 5%;
+      }
+        form{
+         width: 100%;
+         input{
+           padding: 2em;
+           outline: none;
+           border: none;
+           width: 80%;
+       
+         }
+         button{
+          padding: 2em 0;
+           width: 18%;
+         }
+        }
+       }
+
+    }
+
+    &__left, &__right {
+      flex: 1;
+    }
+    
+
+
+  
+
+  
+  
+}
+  
+

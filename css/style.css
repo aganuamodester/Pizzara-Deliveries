@@ -49,3 +49,45 @@ body {
   background-color: #eea539;
   color: #fff;
 }
+
+.hero__container {
+  gap: 5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.hero__container h1 {
+  font-size: 5rem;
+}
+.hero__left--orange {
+  color: #eea539;
+}
+.hero__left__search {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  padding-left: 2em;
+  border-radius: 6px;
+  border: 2px solid #f4f7fb;
+}
+.hero__left__search i {
+  width: 5%;
+}
+.hero__left__search form {
+  width: 100%;
+}
+.hero__left__search form input {
+  padding: 2em;
+  outline: none;
+  border: none;
+  width: 80%;
+}
+.hero__left__search form button {
+  padding: 2em 0;
+  width: 18%;
+}
+.hero__left, .hero__right {
+  flex: 1;
+}
