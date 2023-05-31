@@ -1,9 +1,30 @@
+@use "./variables" as *;
 @mixin flex($justify,$align,$direction:row){
     display:flex;
     justify-content: $justify;
-    align-items: $align;
+    align-items:$align;
     flex-direction: $direction;
 
+}
+@mixin button{
+    background-color: $black;
+    color: $white;
+    border-radius: 2px;
+    padding: 1em 3em;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    cursor:pointer;
+}
+@mixin buttons{
+    background-color: $orange;
+    color: $white;
+    border-radius: 2px;
+    padding: 1em 3em;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    cursor:pointer;
 }
 
  

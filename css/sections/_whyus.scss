@@ -1,0 +1,159 @@
+@use "../utilities/base" as *;
+@use "../utilities/mixins" as *;
+@use "../utilities/variables" as *;
+
+.whyus{
+  &__container{
+    @include flex(space-between,center);
+    h4{
+      font-size: 2rem;
+      padding-bottom: 1em;
+      color: $orange;
+    }
+    h2{
+      font-size: 4rem;
+    }
+    h3{
+      font-size: 2rem;
+    }
+    
+  }
+&__items{
+  @include flex(space-between,center);
+  gap:2em
+  
+  
+
+    
+
+}
+ .img{
+  background-color: $black;
+  border-radius: 50%;
+  text-align: center;
+ } 
+ .div{
+  background-color: $light-grey;
+ }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .whyus {
+//   &__container{
+// @include flex(space-between,center);
+  
+    
+//   }
+// }
+// &__items{
+
+// @include flex(space-between, center);
+//   &__heading{
+//     h2{
+//       text-align: center;
+//       font-size: 2rem;
+//       padding-bottom: 2em;
+//     }
+//       h4{
+//         font-size: 3rem;
+//         font-weight: bold;
+//       }
+//     }
+//     &__items {
+//       background-color: $light-grey;
+//       padding: 5em;
+//       display: flex;
+//       flex-direction: column;
+//       &__right1 {
+//         @include flex(space-between, center);
+//         background-color:$white ;
+//         gap:2em;
+//         img {
+//           border: 1px solid $black;
+//           border-radius: 50%;
+//           background-color: $black;
+//           padding: 1em;
+//           margin-top: 1em;
+//         }
+//       }
+//       &__right2 {
+//         @include flex(space-between, center);
+//         background-color: $white;
+//         gap: 2em;
+//         img {
+//           border: 1px solid $black;
+//           border-radius: 50%;
+//           background-color: $black;
+//           padding: 1em;
+//           margin-top: 1em;
+//         }
+//       }
+      
+      
+      
+      
+//     }
+//     &__right3{
+//       @include flex(space-between, center);
+//       background-color:$white;
+//       gap: 2em;
+      
+//       img {
+//         border: 1px solid $black;
+//         border-radius: 50%;
+//         background-color: $black;
+//         padding: 1em;
+//         margin-top: 1em;
+//       }
+//     }
+    
+    
+//   }
+    
+    
+
+
+

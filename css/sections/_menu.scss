@@ -1,0 +1,68 @@
+@use "../utilities/mixins" as *;
+@use "../utilities/variables" as *;
+@use "../utilities/base" as *;
+.menu {
+  h4 {
+    text-align: center;
+    color: $orange;
+    font-size: 2rem;
+  }
+  h2 {
+    text-align: center;
+    font-size: 4.5rem;
+    padding-bottom: 1em;
+    border: 2px 2px 2px 5px;
+  }
+  h3{
+    font-size: 1rem;
+  }
+  &__heading--orange {
+    color: $orange;
+  }
+  &__categories {
+    ul {
+      @include flex(space-around, center);
+      font-weight: bold;
+      font-size: 2rem;
+      border-bottom: 2px solid gray;
+     li{
+      padding-bottom: 1em;
+     }
+    }
+  }
+  &__items {
+    @include flex(space-evenly, center);
+    p {
+      text-align: center;
+    }
+    h3 {
+      text-align: center;
+      font-size: 1.3rem;
+      padding: 1em;
+    }
+    &__back{
+      background-color:$light-grey;
+    }
+    div{
+      background-color: $light-grey;
+      img{
+        margin: -1px;
+      }
+    }
+  }
+  &__price {
+    @include button;
+  
+    &--orange{
+      @include buttons;
+    }
+   
+  }
+   
+  }
+  .active{
+    color: $orange;
+    border-bottom: 5px  solid $orange;
+   }
+  
+

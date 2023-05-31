@@ -1,5 +1,5 @@
 @use "../utilities/mixins" as *;
-@use "../utilities/variables" as*;
+@use "../utilities/variables" as *;
 .hero {
   &__container {
     gap: 5em;
@@ -7,52 +7,74 @@
     h1 {
       font-size: 5rem;
     }
+  }
+  button{
     
-  
     
-     }
+    background-color: $orange;
+    color: $white;
+    border-radius: 5px;
+    padding: 1em 3em;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    cursor:pointer;
+   }
+  &__left {
+    &--orange {
+      color: $orange;
+      padding: 2em;
 
-     &__left{
-      &--orange{
-        color: $orange;
+      
+    }
+    &__stats {
+      @include flex(space-between,center);
+      padding: 6em;
+      &--grey{
+        background-color:$light-grey;
+        padding: 2em;
+        margin: 2em 0;
+        div{
+          background-color: $black;
+          padding: 2em  ;
+          border-radius:50%};
+          P{
+            font-weight: bold;
+
+          }
       }
-      &__search{
-        @include flex(flex-start,center );
-        padding-left: 2em;
-        border-radius: 6px;
-        border: 2px solid $light-grey; 
-         
-      i{
+      
+      
+    }
+   
+    &__search {
+      @include flex(flex-start, center);
+      padding-left: 2em;
+      border-radius:5px;
+      border: 2px solid $light-grey;
+      i {
         width: 5%;
       }
-        form{
-         width: 100%;
-         input{
-           padding: 2em;
-           outline: none;
-           border: none;
-           width: 80%;
-       
-         }
-         button{
-          padding: 2em 0;
-           width: 18%;
-         }
+      form {
+        width: 100%;
+        input {
+          padding: 2em;
+          outline: none;
+          border: none;
+          width: 80%;
         }
-       }
-
+        button {
+          padding: 2em 0;
+          width: 18%;
+          background-color: $black;
+          color: $white;
+          text-align: center;
+        }
+      }
     }
-
-    &__left, &__right {
-      flex: 1;
-    }
-    
-
-
-  
-
-  
-  
+  }
+  &__left,&__right {
+    flex: 1;
+  }
 }
-  
 

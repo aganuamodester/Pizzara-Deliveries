@@ -7,19 +7,60 @@
   }
 ul {
     @include flex(space-between, center);  
+    
     li{
       padding: 1em;
       cursor: pointer;
-      a{
-        color:$black;
-        padding: 1em;
+      position:relative;
+    }
+    a{
+      color:$black;
+      padding: 1em;
+      &:hover{
+        background-color: $orange;
+        color: $white;
+
+      }
+    }
+  }
+  &__right{
+    ul{
+      li:first-child{
+
         &:hover{
-          background-color: $orange;
-          color: $white;
+          span:last-child{
+            display: block;
+          }
+        }
+
+        span:last-child{
+          padding: 1em;
+          position: absolute;
+          right: -200%;
+          top: 100%;
+          width: 400px;
+          min-height: 200px;
+          background-color: $white;
+          box-shadow: -1px 1px 4px darkgray;
+          display: none
+    
         }
       }
     }
-    
+      &__counter{
+        @include flex(center,center);
+        display: flex;
+        height: 30px;
+        width: 30px;
+        background-color:$orange;
+        border-radius:50%;
+        position:absolute;
+        right:0;
+        top:0;
+        
+      }
+    }
+
   }
   
   
@@ -28,4 +69,3 @@ ul {
 
   
     
-}

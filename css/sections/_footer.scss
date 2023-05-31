@@ -1,0 +1,45 @@
+@use"../utilities/mixins" as *;
+@use"../utilities/variables"as *;
+.footer{
+    &__container{
+        @include flex(space-between,center);
+        margin: 0 1em;
+        background-color: black;
+        padding: 2em;
+        gap: 50;
+        h3 {
+            color:$white;
+        }
+        ul{
+            color: $white;
+        }
+        p{
+            color: $white;
+        }
+        button{
+    
+    
+            background-color: $orange;
+            color: $white;
+            border-radius: 5px;
+            padding: 1em 3em;
+            display: block;
+            margin: 0 auto;
+            border: none;
+            cursor:pointer;
+           }
+         }
+        &__items{
+            @include flex(space-between,center);
+            gap: 2em;
+            
+        }
+        .form{
+            @include button
+        
+        }
+    }
+
+
+
+    
